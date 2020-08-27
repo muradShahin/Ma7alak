@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.muradit.projectx.View.MainActivity.ui.explore.ExploreFragment"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_nav_home_to_allItemsFragment"
+            app:destination="@id/allItemsFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_allStores"
+            app:destination="@id/allStores" />
+        <action
+            android:id="@+id/action_nav_home_to_fullDetailsItemFragment"
+            app:destination="@id/fullDetailsItemFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_sales"
+            app:destination="@id/sales" />
+        <action
+            android:id="@+id/action_nav_home_to_myStoresItems"
+            app:destination="@id/myStoresItems" />
+        <action
+            android:id="@+id/action_nav_home_to_fullDetailsItemFragment2"
+            app:destination="@id/fullDetailsItemFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_insideStoreFragment"
+            app:destination="@id/insideStoreFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.muradit.projectx.View.MainActivity.ui.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_nav_gallery_to_wishListFragment"
+            app:destination="@id/wishListFragment" />
+        <action
+            android:id="@+id/action_nav_gallery_to_editInfoFragment"
+            app:destination="@id/editInfoFragment" />
+        <action
+            android:id="@+id/action_nav_gallery_to_invoiceFragment2"
+            app:destination="@id/invoiceFragment2" />
+        <action
+            android:id="@+id/action_nav_gallery_to_insideStoreFragment"
+            app:destination="@id/insideStoreFragment" />
+        <action
+            android:id="@+id/action_nav_gallery_to_chatHeaders"
+            app:destination="@id/chatHeaders" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.muradit.projectx.View.MainActivity.ui.store.StoreFragment"
+        tools:layout="@layout/fragment_store" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_addItems"
+            app:destination="@id/addItems" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_inventoryFragment"
+            app:destination="@id/inventoryFragment" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_storeOrders"
+            app:destination="@id/storeOrders" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_reviewsFragment"
+            app:destination="@id/reviewsFragment" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_storeOffers"
+            app:destination="@id/storeOffers" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_chatHeaders"
+            app:destination="@id/chatHeaders" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/addItems"
+        android:name="com.muradit.projectx.View.addItemsFragment.AddItems"
+        tools:layout="@layout/fragment_add_items" />
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.muradit.projectx.View.InventroyFragment.InventoryFragment"
+        android:label="Inventory"
+        tools:layout="@layout/fragment_inventory" >
+        <action
+            android:id="@+id/action_inventoryFragment_to_moreFragment"
+            app:destination="@id/moreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.muradit.projectx.View.moreFragment.moreFragment"
+        tools:layout="@layout/fragment_more" />
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.muradit.projectx.View.MainActivity.ui.tools.ToolsFragment"
+        tools:layout="@layout/fragment_tools" />
+    <fragment
+        android:id="@+id/allItemsFragment"
+        android:name="com.muradit.projectx.View.allItems.AllItemsFragment"
+        tools:layout="@layout/fragment_all_items" >
+        <action
+            android:id="@+id/action_allItemsFragment_to_fullDetailsItemFragment"
+            app:destination="@id/fullDetailsItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allStores"
+        android:name="com.muradit.projectx.View.allStores.allStores"
+        tools:layout="@layout/fragment_all_stores" >
+        <action
+            android:id="@+id/action_allStores_to_insideStoreFragment"
+            app:destination="@id/insideStoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullDetailsItemFragment"
+        android:name="com.muradit.projectx.View.ItemFullDetails.FullDetailsItemFragment"
+        tools:layout="@layout/fragment_full_details_item" >
+        <action
+            android:id="@+id/action_fullDetailsItemFragment_to_contractFragment"
+            app:destination="@id/contractFragment" />
+        <action
+            android:id="@+id/action_fullDetailsItemFragment_to_insideStoreFragment"
+            app:destination="@id/insideStoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contractFragment"
+        android:name="com.muradit.projectx.View.BuyContract.ContractFragment"
+        tools:layout="@layout/fragment_contract" />
+    <fragment
+        android:id="@+id/wishListFragment"
+        android:name="com.muradit.projectx.View.wishListView.WishListFragment"
+        tools:layout="@layout/fragment_wish_list">
+        <action
+            android:id="@+id/action_wishListFragment_to_fullDetailsItemFragment"
+            app:destination="@id/fullDetailsItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editInfoFragment"
+        android:name="com.muradit.projectx.View.EditInfo.EditInfoFragment"
+        android:label="Edit"
+        tools:layout="@layout/fragment_edit_info" />
+    <fragment
+        android:id="@+id/invoiceFragment2"
+        android:name="com.muradit.projectx.View.OrderFullDetails.InvoiceFragment"
+        android:label="Order Details" >
+        <action
+            android:id="@+id/action_invoiceFragment2_to_fullDetailsItemFragment"
+            app:destination="@id/fullDetailsItemFragment" />
+        <action
+            android:id="@+id/action_invoiceFragment2_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/insideStoreFragment"
+        android:name="com.muradit.projectx.View.InsideStore.InsideStoreFragment"
+        tools:layout="@layout/fragment_inside_store">
+        <action
+            android:id="@+id/action_insideStoreFragment_to_fullDetailsItemFragment"
+            app:destination="@id/fullDetailsItemFragment" />
+        <action
+            android:id="@+id/action_insideStoreFragment_to_reviewsFragment"
+            app:destination="@id/reviewsFragment" />
+        <action
+            android:id="@+id/action_insideStoreFragment_to_chatRoom"
+            app:destination="@id/chatRoom" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewsFragment"
+        android:name="com.muradit.projectx.View.Reviews.ReviewsFragment"
+        tools:layout="@layout/fragment_reviews" />
+    <fragment
+        android:id="@+id/storeOrders"
+        android:name="com.muradit.projectx.View.StoreOrders.StoreOrders"
+        tools:layout="@layout/fragment_store_orders" />
+    <fragment
+        android:id="@+id/storeOffers"
+        android:name="com.muradit.projectx.View.storeOffers.StoreOffers"
+        tools:layout="@layout/fragment_store_offers" />
+    <fragment
+        android:id="@+id/sales"
+        android:name="com.muradit.projectx.View.SalesView.Sales"
+        tools:layout="@layout/fragment_sales">
+        <action
+            android:id="@+id/action_sales_to_insideStoreFragment"
+            app:destination="@id/insideStoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myStoresItems"
+        android:name="com.muradit.projectx.View.MyStoresItems.MyStoresItems"
+        tools:layout="@layout/fragment_my_stores">
+        <action
+            android:id="@+id/action_myStoresItems_to_fullDetailsItemFragment"
+            app:destination="@id/fullDetailsItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatRoom"
+        android:name="com.muradit.projectx.View.RoomChatView.ChatRoom"
+        tools:layout="@layout/fragment_chat_room" />
+    <fragment
+        android:id="@+id/chatHeaders"
+        android:name="com.muradit.projectx.View.RoomChatView.ChatHeaders"
+        tools:layout="@layout/fragment_chat_headers">
+        <action
+            android:id="@+id/action_chatHeaders_to_chatRoom"
+            app:destination="@id/chatRoom" />
+    </fragment>
+
+</navigation>

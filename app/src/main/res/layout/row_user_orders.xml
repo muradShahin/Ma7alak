@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/places_autocomplete_prediction_height"
+    android:layout_margin="6dp"
+    app:cardBackgroundColor="@color/material_blue_grey_80"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="27.5dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/itemImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/com_facebook_profile_picture_blank_square" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/nameItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/aspergit_bold"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#ffc107"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/storeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/aspergit_bold"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#ffc107"
+                android:textColorLink="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/login_font"
+                android:gravity="center"
+
+                android:text="TextView"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/login_font"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/login_font"
+                    android:text="TextView"
+                    android:textColor="@color/quantum_googred600"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/seeMoreBtn"
+                    android:layout_width="@dimen/nav_headerCardH_W"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/btn_selector"
+                    android:fontFamily="@font/aspergit_bold"
+                    android:text="@string/seeMoreStr"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

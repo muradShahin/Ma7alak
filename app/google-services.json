@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "729012209204",
+    "firebase_url": "https://projectx-e3e6f.firebaseio.com",
+    "project_id": "projectx-e3e6f",
+    "storage_bucket": "projectx-e3e6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729012209204:android:3a855ab20bd3296f3e6c61",
+        "android_client_info": {
+          "package_name": "com.muradit.projectx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729012209204-1n5cre9aask1v99g9nmf15lnelp4r3je.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muradit.projectx",
+            "certificate_hash": "c864d73ddb9e77e99eec00d0674eecec7be2620e"
+          }
+        },
+        {
+          "client_id": "729012209204-26ff0q9ra8lp7buvfuhjj7tuie283a62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEwYiwY4zLVpDmyNwaD99zbkxNEesR5Vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729012209204-26ff0q9ra8lp7buvfuhjj7tuie283a62.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

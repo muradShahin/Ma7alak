@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/LinearLayInCardxxH_width">
+
+    <ImageView
+        android:id="@+id/sliderImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayInCardxxH_width"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_square"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="55dp"
+        />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardView_profileH"
+        android:layout_alignParentBottom="true"
+        android:background="#42a5f4"
+        android:fontFamily="@font/aspergit_bold"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</RelativeLayout>

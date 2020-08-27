@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="xxxWidthEditText">220dp</dimen>
+    <dimen name="xxxHeightEditText">45dp</dimen>
+    <dimen name="xHeightEditText">40dp</dimen>
+    <dimen name="heightBtn">45dp</dimen>
+    <dimen name="facenookImage">24dp</dimen>
+    <dimen name="facebookImageLowDp">18dp</dimen>
+    <dimen name="xxxHeighTextWidth">140dp</dimen>
+    <dimen name="LinearLayInCardxxH_width">180dp</dimen>
+    <dimen name="editTextHeightLow">35dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">4dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_headerCardH_W">70dp</dimen>
+    <dimen name="cardView_profileH">55dp</dimen>
+    <dimen name="startHW">20dp</dimen>
+    <dimen name="lowHeight">120dp</dimen>
+    <dimen name="exploreRecyclerH">190dp</dimen>
+    <dimen name="recHeightTemp">200dp</dimen>
+    <dimen name="itemsRowW">160dp</dimen>
+    <dimen name="profileDashH">150dp</dimen>
+</resources>

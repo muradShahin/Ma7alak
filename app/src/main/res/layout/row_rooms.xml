@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/com_facebook_profilepictureview_preset_size_normal"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:id="@+id/roomLay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/com_facebook_profilepictureview_preset_size_normal"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/com_facebook_profile_picture_blank_square" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#42a5f4"
+            app:cardCornerRadius="6dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/aspergit_bold"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvNotif"
+            android:layout_width="@dimen/editTextHeightLow"
+            android:layout_height="@dimen/editTextHeightLow"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="6dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/quantum_googred"
+            app:cardCornerRadius="17.5dp">
+
+            <TextView
+                android:id="@+id/notifNumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/login_font"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
